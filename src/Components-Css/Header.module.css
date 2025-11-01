@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+	--header-height: 100px;
+}
+
+.header {
+	display: flex;
+	position: sticky;
+	top: 0;
+	height: var(--header-height);
+	align-items: center;
+	padding: 0 10px;
+	background: #000000;
+	z-index: 1000;
+}
+
+.header img {
+	width: 8vh;
+	height: auto;
+	border-radius: 5px;
+}
+
+.header nav {
+	margin-left: auto;
+}
+
+.header nav ul {
+	display: flex;
+	font-size: 1.5rem;
+	gap: 4rem;
+	color: #e7e5e4;
+}
+
+.header nav ul li a {
+	display: inline-block;
+	text-transform: uppercase;
+	position: relative;
+	padding: 10px;
+	z-index: 1;
+	transition: 0.15s ease;
+}
+
+.header nav ul li a::before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	background-color: gray;
+	border-radius: 5px;
+	z-index: -1;
+	transform: scale(0.95);
+	opacity: 0;
+	transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.header nav ul li a:hover::before {
+	transform: scale(1);
+	opacity: 1;
+}

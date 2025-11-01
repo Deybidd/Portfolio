@@ -1,0 +1,21 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+#root {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+
+	color-scheme: light dark;
+	color: #000000;
+	background-color: #f1e9d2;
+
+	font-family: Arial Rounded MT;
+}
+
+#root > div {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	box-sizing: border-box;
+}

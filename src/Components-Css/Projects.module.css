@@ -1,0 +1,90 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.previousProjects h1 {
+    font-size: 2.25rem;
+    background-color: black;
+    margin-left: -1rem;
+    color: #f7f3e5;
+    border-radius: 10px;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.carouselContainer {
+    justify-content: center;
+    display: flex;
+    max-width: 78%;
+    margin-bottom: 4rem;
+}
+
+.card {
+    height: 27rem;
+    background-color: black;
+}
+
+.cardHeader {
+    text-align: left;
+    padding: 1rem 1rem 0 1rem;
+    min-height: 6rem;
+    color: #f7f3e5;
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.cardContent {
+    height: fit-content;
+    background-color: #ebdfbf;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer {
+    font-size: 1.1rem;
+    display: flex;
+    color: #f7f3e5;
+    text-align: left;
+}
+
+.footerAction {
+    color: #f7f3e5;
+}
+
+.previousProjects {
+    font-size: 3rem;
+    margin: 2rem 0 2rem 0;
+}
+
+.toolTipContent {
+    font-size: 1rem;
+    color: black;
+    background-color: #f7f3e5;
+    border: 1px solid black;
+}
+
+.availableButton, .unavailableButton {
+    font-size: 1.1rem;
+}
+
+.unavailableButton:hover {
+    cursor: not-allowed;
+}
+
+.availableButton:hover {
+    cursor: pointer;
+}
+
+.carouselButton {
+    border: 2px solid black;
+    background-color: #ebdfbf;
+}
+
+.carouselButton:hover {
+    background-color: white;
+    cursor: pointer;
+}
