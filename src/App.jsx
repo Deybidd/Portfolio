@@ -8,7 +8,8 @@ function App() {
 	return (
 		<div>
 			<Header></Header>
-			<section id="home"
+			<section
+				id="home"
 				class="p-8 pb-60 grid grid-cols-2 gap-8 items-center text-left min-h-full scroll-mt-25"
 			>
 				<div>
@@ -31,7 +32,8 @@ function App() {
 			<section id="projects" class="scroll-mt-60">
 				<Projects></Projects>
 			</section>
-			<section id="about"
+			<section
+				id="about"
 				class="box-border mt-36 pt-4 pb-4 items-center text-left scroll-mt-70"
 			>
 				<h1 class="ml-20 mb-10 inline-block items-left text-4xl bg-black text-[#f7f3e5] rounded-lg p-4">
@@ -111,8 +113,14 @@ function App() {
 						<h1 class="my-4">09150783138</h1>
 						<h1 class="my-4">
 							<a
-								href="https://github.com/Deybidd?tab=overview&from=2024-12-01&to=2024-12-31"
-								class="underline decoration-2 decoration-black"
+								class="underline decoration-2 decoration-black cursor-pointer"
+								onClick={() =>
+									window.open(
+										"https://github.com/Deybidd?tab=overview&from=2024-12-01&to=2024-12-31",
+										"_blank",
+										"noopener,noreferrer"
+									)
+								}
 							>
 								Deybidd
 							</a>
